@@ -1,0 +1,58 @@
+body{
+    background-color:#e5e2dc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTENEDOR GRANDE */
+.contenedor{
+    width:70%;
+    margin:auto;
+    margin-top:60px;
+    background-color:#ddd3c2;
+    padding:30px;
+    border-radius:20px;
+}
+
+/* BUSCADOR */
+.search{
+    padding:6px;
+    margin-bottom:20px;
+}
+
+/* CAJA DE LA LISTA */
+.lista{
+    background-color:#d3d3d3;
+    padding:10px;
+}
+
+/* CADA USUARIO */
+.usuario{
+    display:flex;
+    border-bottom:2px solid skyblue;
+    padding:10px;
+}
+
+/* QUITA LA LÍNEA DEL ÚLTIMO */
+.usuario:last-child{
+    border-bottom:none;
+}
+
+/* ICONO REDONDO */
+.icono{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background-color:#8fa889;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+    margin-right:15px;
+}
+
+/* TEXTOS */
+.usuario p{
+    margin:2px;
+}

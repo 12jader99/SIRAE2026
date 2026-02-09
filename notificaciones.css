@@ -1,0 +1,89 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#dfe6dc;
+}
+
+/* CONTENEDOR GRANDE */
+.pantalla{
+    width:350px;
+    background:linear-gradient(#e6d8c3,#d9c7ad);
+    padding:30px;
+    border-radius:25px;
+}
+
+/* TITULO */
+h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* LISTA */
+.lista{
+    margin-top:10px;
+}
+
+/* CADA NOTIFICACION */
+.noti{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 0;
+    border-bottom:2px solid #6b6b6b;
+}
+
+/* ICONO REDONDO */
+.icono{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background-color:#8fa889;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:26px;
+}
+
+/* TEXTO */
+.texto{
+    flex:1;
+    margin-left:10px;
+}
+
+.nombre{
+    margin:0;
+    font-weight:bold;
+}
+
+.mensaje{
+    margin:0;
+    font-size:13px;
+    color:#444;
+}
+
+/* CIRCULO DEL NUMERO */
+.numero{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background-color:#eeeeee;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:12px;
+    font-weight:bold;
+}
