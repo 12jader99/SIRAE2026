@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+
+<div class="pantalla">
+
+    <div class="titulo">inventario</div>
+
+    <!-- TARJETAS -->
+    <div class="resumen">
+        <div class="card">Total productos<br><b>6</b></div>
+        <div class="card">Stock alto<br><span class="verde">3</span></div>
+        <div class="card">Stock bajo<br><span class="amarillo">2</span></div>
+        <div class="card">Crítico<br><span class="rojo">1</span></div>
+    </div>
+
+    <!-- BUSQUEDA -->
+    <div class="busqueda">
+        <input type="text" placeholder="Buscar producto...">
+        <select>
+    <option value="">Todas las categorías</option>
+    <option value="granos">Granos</option>
+    <option value="proteinas">Proteínas</option>
+    <option value="lacteos">Lácteos</option>
+    <option value="verduras">Verduras</option>
+    <option value="otros">Otros</option>
+</select>
+    </div>
+
+    <!-- TABLA -->
+    <div class="tabla">
+
+        <div class="fila encabezado">
+            <div>PRODUCTO</div>
+            <div>CATEGORIA</div>
+            <div>CANTIDAD</div>
+            <div>ESTADO</div>
+            <div>ACTUALIZADO</div>
+            <div>ACCIONES</div>
+        </div>
+
+        <div class="fila">
+            <div>Arroz</div>
+            <div>Granos</div>
+            <div>25 kg</div>
+            <div>ok</div>
+            <div>2026-02-07 08:00</div>
+            <div>Actualizar</div>
+        </div>
+
+        <div class="fila">
+            <div>Frijol</div>
+            <div>Granos</div>
+            <div>8 kg</div>
+            <div>bajo</div>
+            <div>2026-02-07 08:00</div>
+            <div>Actualizar</div>
+        </div>
+
+        <div class="fila">
+            <div>Pollo</div>
+            <div>Proteínas</div>
+            <div>12 kg</div>
+            <div>bajo</div>
+            <div>2026-02-07 08:00</div>
+            <div>Actualizar</div>
+        </div>
+
+        <div class="fila">
+            <div>Leche</div>
+            <div>Lacteos</div>
+            <div>2 L</div>
+            <div>critico</div>
+            <div>2026-02-07 08:00</div>
+            <div>Actualizar</div>
+        </div>
+
+        <div class="fila">
+            <div>Aceite</div>
+            <div>Otros</div>
+            <div>5 L</div>
+            <div>Ok</div>
+            <div>2026-02-07 08:00</div>
+            <div>Actualizar</div>
+        </div>
+
+        <div class="fila">
+            <div>Tomate</div>
+            <div>Verduras</div>
+            <div>15 kg</div>
+            <div>Ok</div>
+            <div>2026-02-07 08:00</div>
+            <div>Actualizar</div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
