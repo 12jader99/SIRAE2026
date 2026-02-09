@@ -1,64 +1,37 @@
-
-body {
-    margin: 0;
-    font-family: Jomhuria, sans-serif;
-  background-color: aliceblue;
+body{
+    margin:0;
+    font-family:Jomhuria, sans-serif;
 }
 
-
-.fondo {
-    width: 100%;
-    height: 100vh;
-
-    background-image: url("fondo.png");
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fondo{
+    height:100vh;
+    background:url("img/fondo.png") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-
-.tarjeta {
-    width: 500px;
-    padding: 40px;
-
-    background-color: #69726239;;
-    border-radius: 30px;
-
-    text-align: center;
+.tarjeta{
+    width:500px;
+    padding:40px;
+    background:#69726239;
+    border-radius:30px;
+    text-align:center;
 }
 
-
-.logo {
-    width: 200px;
-    margin-bottom: 15px;
+.logo{
+    width:200px;
 }
 
-
-
-
-
-h1 {
-    font-size: 48px;
-    margin: 10px 0;
-    font-family: Jomhuria;
-
+h1,p{
+    color:white;
 }
 
-
-p {
-    font-size: 14px;
-    margin-bottom: 30px;
-    font-family: Jomhuria;
-}
-
-.btn {
-    padding: 10px 30px;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    background-color:#f3f5f1a6 ;
+.btn{
+    display:inline-block;
+    padding:10px 30px;
+    border-radius:25px;
+    background:#f3f5f1a6;
+    text-decoration:none;
+    color:#432e21;
 }

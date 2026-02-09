@@ -31,6 +31,13 @@ body{
     margin-bottom:20px;
 }
 
+.back{
+    display:inline-block;
+    margin-bottom:15px;
+    font-size:22px;
+    cursor:pointer;
+}
+
 /* TARJETAS */
 .resumen{
     display:flex;

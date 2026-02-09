@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio sesión</title>
-    <link rel="stylesheet" href="Iniciosesion.css">
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="Iniciosesion.css">
 </head>
-
 <body>
+    <a href="../isa/home.html">prueba</a>
 
-    <div class="contenedor">
 
-        
-        <div class="logo-box">
-            <img src="logo.png" alt="logo">
-        </div>
+<div class="overlay"></div>
 
-        
-        <div class="form-box">
-            <h3>¡Bienvenido!</h3>
-            <p>Sistema integral de registro alimentario escolar.</p>
-            <p>¿Aún no tienes una cuenta?</p>
+<div class="contenedor">
+    <div class="logo-box">
+        <img src="logo.png">
+    </div>
 
-            
-            <form>
+    <div class="form-box">
+        <h3>¡Bienvenido!</h3>
+        <p>Sistema integral de registro alimentario escolar.</p>
 
-            <input type="email" placeholder="Correo Electrónico" required>
-            <input type="password" placeholder="Contraseña" required>
-            <input type="text" placeholder="Rol" required>
+    <form onsubmit="redirigir(event)">
+    <input type="email" placeholder="Correo Electrónico" required>
+    <input type="password" placeholder="Contraseña" required>
 
-            <a class="link" href="#">¿Olvidaste tu contraseña?</a>
+    <!-- IMPORTANTE: poner id -->
+    <input type="text" id="rol" placeholder="Rol" required>
 
-            <button class="btn" type="submit">Siguiente</button>
-            </form>
+    
 
-        </div>
+    <button class="btn" type="submit">Siguiente</button>
+    </form>
+
 
     </div>
+</div>
+
+<script>
+function redirigir(event) {
+    event.preventDefault(); // evita que se recargue la página
+
+    const rol = document.getElementById("rol").value.toLowerCase();
+
+    if (rol === "a") {
+        window.location.href = "../isa/home.html";
+    } 
+    else if (rol === "m") {
+        window.location.href = "../isa/inicio.html";
+    } 
+    else {
+        alert("Rol no válido. Usa: a o m");
+    }
+}
+</script>
+
 
 </body>
 </html>
