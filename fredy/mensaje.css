@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('tu-fondo.png'); 
+    background-color: #a6bfa3; 
+    background-size: 500px; 
+    background-repeat: repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pantalla-celular {
+    background-color: #dcd6cc; 
+    width: 100%;
+    max-width: 400px; 
+    height: 85vh; 
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 20px;
+    box-sizing: border-box; 
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 3px solid #3a9bdc; 
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #c0b7a9;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #8a9f87;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    border: 3px solid #fff;
+}
+
+.avatar i {
+    font-size: 35px;
+    color: #dcd6cc;
+}
+
+.nombre-usuario {
+    font-family: 'Rubik Bubbles', cursive;
+    color: #2a3325; 
+    font-size: 24px;
+    margin: 0;
+}
+
+.area-mensajes {
+    flex: 1; 
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.burbuja-mensaje {
+    max-width: 70%;
+    padding: 15px 20px;
+    font-family: 'Rubik Bubbles', cursive;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.recibido {
+    background-color: #566654; 
+    color: #e0e0e0; 
+    align-self: flex-start; 
+    border-radius: 0px 25px 25px 25px; 
+}
+
+.area-input {
+    margin-top: 20px;
+}
+
+.barra-escribir {
+    background-color: #aeaaaa;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.barra-escribir input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.icono-microfono {
+    color: #2a3325;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;}

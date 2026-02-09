@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #efe7d8;
+}
+
+/* BARRA SUPERIOR */
+.topbar {
+    height: 50px;
+    background-color: #7a8f6a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.menu {
+    background: #2f2f2f;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 200px;
+    height: 120vh;
+    background-color: #f2eee6;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    padding: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* CONTENIDO */
+.contenido {
+    margin-left: 250px;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+/* TABS */
+.tabs {
+    background-color: #7a8f6a;
+    padding: 15px;
+    border-radius: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.tabs button {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.tabs .activo {
+    background-color: white;
+}
+
+/* TARJETAS SUPERIORES */
+.cards-top {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card-small {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 220px;
+}
+
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.num {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.emoji {
+    font-size: 26px;
+    color: #7a8f6a;
+}
+
+/* TARJETAS INFERIORES */
+.cards-bottom {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card-large {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 45%;
+}
+
+.card-large h3 {
+    margin-top: 0;
+}
+
+/* ITEMS */
+.item {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.item small {
+    display: block;
+    color: #777;
+}
+
+.gris::before {
+    content: "● ";
+    color: gray;
+}
+
+.azul::before {
+    content: "● ";
+    color: blue;
+}
+
+.rojo::before {
+    content: "● ";
+    color: red;
+}

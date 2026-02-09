@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú interactivo</title>
+    <link rel="stylesheet" href="minutas.css">
+</head>
+<body>
+
+<div class="pantalla">
+
+    <div class="contenedor">
+
+        <!-- HEADER -->
+        <div class="header">
+            <div>
+                <p class="volver">← Volver al inicio</p>
+                <p class="sub">
+                    Menú del día <br>
+                    <span>Selecciona el menú para hoy</span>
+                </p>
+            </div>
+            <div class="iconos">🔔 ⋮</div>
+        </div>
+
+        <!-- MENÚ SUGERIDO -->
+        <div class="sugerido">
+            🍴 <b>Menú sugerido para hoy</b><br>
+            💡 Tienes suficiente papa, carne y vegetales en inventario
+        </div>
+
+        <!-- CARD -->
+        <div class="menu-card">
+
+            <img src="carne-guisada.jpg" alt="plato">
+
+            <div class="contenido">
+
+                <p class="porcion">
+                    Porción por grado 
+                    <span class="ojo">👁</span>
+                </p>
+
+                <!-- CHECKBOX OCULTO -->
+                <input type="checkbox" id="verIngredientes">
+
+                <label for="verIngredientes" class="ver">
+                    Ver ingredientes
+                </label>
+
+                <!-- INGREDIENTES -->
+                <div class="ingredientes">
+                    <span>carne: 100g</span>
+                    <span>tomate: 30g</span>
+                    <span>cebolla: 30g</span>
+                    <span>arroz: 120g</span>
+                </div>
+
+                <div class="botones">
+                    <button class="btn-verde">Usar este menú</button>
+                    <button class="btn-blanco">Ver otros menús</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

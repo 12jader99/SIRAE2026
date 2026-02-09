@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de gramaje</title>
+    <link rel="stylesheet" href="gramaje.css">
+</head>
+<body>
+
+<div class="pantalla">
+
+    <div class="contenedor">
+
+        <div class="header">
+            <p><b>← Volver al inicio</b></p>
+            <h3>Control de gramaje</h3>
+            <span>Asegúrate de que las porciones alcancen para todos</span>
+        </div>
+
+        <!-- TARJETA -->
+        <div class="card">
+
+            <h4>Asistencia niños de primaria: <span class="num">150</span></h4>
+
+            <div class="datos">
+                <div>Por porción<br><b>200 gr</b></div>
+                <div>Total necesario<br><b>7000 gr</b></div>
+                <div>Disponible<br><b>7200 gr</b></div>
+            </div>
+
+            <input type="radio" name="estado1" id="ok1">
+            <input type="radio" name="estado1" id="bad1">
+
+            <div class="estado suficiente">✔ Suficiente</div>
+            <div class="estado insuficiente">❗ Insuficiente</div>
+
+            <div class="acciones">
+                <label for="ok1" class="btn verde">Marcar suficiente</label>
+                <label for="bad1" class="btn rojo">Marcar insuficiente</label>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

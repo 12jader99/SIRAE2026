@@ -1,0 +1,64 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* FONDO NEGRO */
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FONDO DE VERDURAS */
+.fondo-verduras {
+    width: 380px;
+    padding: 25px;
+    background-image: url("fondo3.jpg");
+    background-repeat: repeat;
+    background-size: 350px;
+    border-radius: 35px;
+}
+
+/* TARJETA */
+.card {
+    background: #f5ecd9;
+    border-radius: 30px;
+    padding: 35px 30px;
+}
+
+/* TÍTULO */
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* LISTA */
+.lista {
+    list-style: none;
+}
+
+/* ITEMS */
+.lista li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* PUNTICOS VERDES */
+.lista li::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #5f7f5a;
+    border-radius: 50%;
+    margin-right: 12px;
+}
