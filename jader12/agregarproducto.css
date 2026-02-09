@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4efe6;
+}
+
+/* Contenedor */
+.container{
+    width:900px;
+    background:#f3eadb;
+    border-radius:25px;
+    padding:20px;
+}
+
+/* Buscador */
+.search input{
+    width:180px;
+    padding:6px 12px;
+    border-radius:20px;
+    border:1px solid #bbb;
+    margin-bottom:15px;
+}
+
+/* Tabla */
+.table{
+    display:grid;
+    grid-template-columns: 
+        60px 60px 1fr 1fr 1fr 100px 150px;
+    align-items:center;
+    gap:10px;
+    padding:10px;
+}
+
+.header{
+    font-weight:bold;
+    color:#555;
+}
+
+/* Filas */
+.row{
+    background:#fff;
+    border-top:2px solid #6ec1e4;
+}
+
+/* Imagen */
+.img-box{
+    width:40px;
+    height:30px;
+    background:#d3d3d3;
+}
+
+/* Avatar */
+.avatar{
+    width:40px;
+    height:40px;
+    background:#7e9a7a;
+    border-radius:50%;
+}
+
+/* Switch */
+.switch{
+    width:50px;
+    height:25px;
+    border-radius:20px;
+    position:relative;
+}
+
+.switch::after{
+    content:"";
+    width:20px;
+    height:20px;
+    background:#ccc;
+    border-radius:50%;
+    position:absolute;
+    top:2.5px;
+}
+
+.active{
+    background:#7e9a7a;
+}
+
+.active::after{
+    right:3px;
+}
+
+.inactive{
+    background:#ff2b2b;
+}
+
+.inactive::after{
+    left:3px;
+}
+
+/* Acciones */
+.actions{
+    display:flex;
+    gap:8px;
+}
+
+.icon{
+    width:28px;
+    height:28px;
+    border-radius:4px;
+}
+
+.folder{ background:#f4a62a; }
+.trash{ background:#1e6cff; }
+.edit{ background:#f0c14b; }
+.view{ background:#000; border-radius:50%; }
+
+/* Botón */
+.add-btn{
+    margin-top:15px;
+    padding:8px 20px;
+    border-radius:20px;
+    border:none;
+    background:#d1d1d1;
+    color:#888;
+    float:right;
+}
