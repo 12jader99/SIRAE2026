@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.pantalla {
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background: url("fondo2.jpg");
+    background-size: 300px;
+    padding: 25px;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 900px;
+}
+
+.header {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.estado {
+    display: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.suficiente {
+    background: #cfdac8;
+    color: #3c5f2f;
+}
+
+.insuficiente {
+    background: #f2c7c7;
+    color: #8a1f1f;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#ok1:checked ~ .suficiente {
+    display: block;
+}
+
+#bad1:checked ~ .insuficiente {
+    display: block;
+}
+
+.acciones {
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 8px 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.verde {
+    background: #6f8563;
+}
+
+.rojo {
+    background: #a34a4a;
+}

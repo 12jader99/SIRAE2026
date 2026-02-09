@@ -1,0 +1,96 @@
+/* Estilos base */
+body {
+    margin: 0;
+    background-color: #d8d0c5; /* Color crema del fondo */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.movil-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 22px;
+    color: #555;
+}
+
+.check-btn {
+    background: #c0b7a9;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Foto de perfil */
+.foto-perfil {
+    text-align: center;
+    position: relative;
+    width: 100px;
+    margin: 0 auto 30px;
+}
+
+.icon-usuario {
+    font-size: 90px;
+    color: #888;
+}
+
+.icon-editar-foto {
+    position: absolute;
+    bottom: 5px;
+    right: -5px;
+    font-size: 20px;
+    color: #777;
+    background: #d8d0c5;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+/* Formulario */
+.grupo {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 19px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    background-color: #cfc6bc; /* Gris oscuro del input */
+    border: 1px solid #b0a89e;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #444;
+    outline: none;
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    color: #666;
+    font-size: 16px;
+}

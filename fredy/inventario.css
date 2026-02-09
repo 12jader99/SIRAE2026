@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("fondo2.jpg");
+    background-size: cover;
+}
+
+/* BARRA SUPERIOR */
+.topbar {
+    height: 80px;
+    background-color: #7a8f6a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.menu {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    padding: 30px;
+}
+
+/* TITULO INVENTARIO */
+.titulo {
+    background-color: #7a8f6a;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 300px;
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+/* TARJETAS */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-items: center;
+}
+
+.card {
+    background-color: rgba(122, 143, 106, 0.9);
+    width: 180px;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.card h2 {
+    margin: 10px 0 0;
+    font-size: 32px;
+}
+
+/* BOTON + */
+.icono {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: #7a8f6a;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.numero {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.emoji {
+    font-size: 26px;
+}
