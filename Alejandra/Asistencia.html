@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Asistencia diaria</title>
+    <link rel="stylesheet" href="Asistencia.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+    <div class="card-principal">
+
+        <div class="encabezado">
+            <div>
+              <span class="volver">← Volver al inicio</span>
+              <h2>Asistencia diaria</h2>
+              <p>Registra cuántos estudiantes asistieron hoy</p>
+            </div>
+                  <div class="menu">⋮</div>
+        </div>
+
+        <div class="esperados">
+            👥 <strong>Estudiantes esperados:</strong> 250
+        </div>
+
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>Asistencia primaria</h3>
+                <small>18 - 06 - 2026</small>
+                <input type="number" id="primaria" min="0">
+            </div>
+
+            <div class="tarjeta">
+                <h3>Asistencia 10° y 11°</h3>
+                <small>18 - 06 - 2026</small>
+                <input type="number" id="secundaria" min="0">
+            </div>
+
+            <div class="tarjeta">
+                <h3>Total estudiantes</h3>
+                <small>18 - 06 - 2026</small>
+                <input type="number" id="total" readonly>
+            </div>
+
+        </div>
+
+        <button class="btn" onclick="guardar()">Guardar asistencia</button>
+
+        <p id="mensaje"></p>
+
+    </div>
+
+</div>
+
+<script>
+function guardar() {
+    let primaria = Number(document.getElementById("primaria").value);
+    let secundaria = Number(document.getElementById("secundaria").value);
+
+    if (primaria < 0 || secundaria < 0) {
+        alert("No se permiten valores negativos");
+        return;
+    }
+
+    let total = primaria + secundaria;
+    document.getElementById("total").value = total;
+
+    document.getElementById("mensaje").innerHTML =
+        "✅ Asistencia guardada correctamente";
+}
+</script>
+
+</body>
+</html>

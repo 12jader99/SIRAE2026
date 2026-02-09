@@ -1,0 +1,55 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.fondo {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal {
+    background-color: #f6efe6;
+    width: 350px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.mensaje {
+    background-color: #7b8f6a;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.aceptar {
+    background-color: #6F866A;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cancelar {
+    background-color: #7b0d0d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}

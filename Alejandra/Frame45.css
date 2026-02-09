@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.roles-box {
+    width: 260px;
+    background-color: #e6e6e6;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.rol {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #999;
+}
+
+.rol:last-child {
+    border-bottom: none;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.rol span {
+    font-size: 16px;
+    color: black;
+}

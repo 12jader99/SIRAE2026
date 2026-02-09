@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.fondo {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal {
+    background-color: #f6efe6;
+    width: 300px;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.mensaje {
+    background-color: #7b8f6a;
+    color: black;
+    padding: 18px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.aceptar {
+    background-color: #7c7a7ad2;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
