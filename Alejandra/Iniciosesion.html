@@ -6,39 +6,33 @@
 <link rel="stylesheet" href="Iniciosesion.css">
 </head>
 <body>
-    <a href="../isa/home.html">prueba</a>
-
 
 <div class="overlay"></div>
 
 <div class="contenedor">
+    
     <div class="logo-box">
-        <img src="logo.png">
+        <img src="../imagenes/logo1.png" alt="logo">
     </div>
 
     <div class="form-box">
         <h3>¡Bienvenido!</h3>
         <p>Sistema integral de registro alimentario escolar.</p>
 
-    <form onsubmit="redirigir(event)">
-    <input type="email" placeholder="Correo Electrónico" required>
-    <input type="password" placeholder="Contraseña" required>
+        <form onsubmit="redirigir(event)">
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <input type="text" id="rol" placeholder="Rol (a o m)" required>
 
-    <!-- IMPORTANTE: poner id -->
-    <input type="text" id="rol" placeholder="Rol" required>
-
-    
-
-    <button class="btn" type="submit">Siguiente</button>
-    </form>
-
-
+            <button class="btn" type="submit">Siguiente</button>
+        </form>
     </div>
+
 </div>
 
 <script>
 function redirigir(event) {
-    event.preventDefault(); // evita que se recargue la página
+    event.preventDefault();
 
     const rol = document.getElementById("rol").value.toLowerCase();
 
@@ -53,7 +47,6 @@ function redirigir(event) {
     }
 }
 </script>
-
 
 </body>
 </html>

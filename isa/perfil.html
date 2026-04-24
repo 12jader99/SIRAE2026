@@ -7,14 +7,58 @@
 </head>
 <body>
 
-<a href="home.html" class="back">←</a>
+<div class="contenedor">
 
-<div class="perfil">
-    <h2>Perfil</h2>
-    <input value="Nombre">
-    <input value="Correo">
-    <input value="Documento">
-    <input value="Teléfono">
+    <div class="header">
+        <button class = "volver" onclick="volver()">←</button>
+
+        <script>
+            function volver(){
+            if (document.referrer !== "") {
+            history.back();
+        } else {
+        window.location.href = "../isa/home.html";
+        }
+}
+        </script>
+        <h2>Danna Martinez</h2>
+        <div class="ready">✔</div>
+    </div>
+
+    <div class="avatar">
+        <span>👤</span>
+        <span class="edit">✏️</span>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="form">
+
+        <label>Nombres y apellidos</label>
+        <div class="input-box">
+            <input type="text" value="Aleja Pipicano">
+            <span>✏️</span>
+        </div>
+
+        <label>E-mail</label>
+        <input type="email" value="kjsadhakjdhwiu@gmail.com">
+
+        <label>Id</label>
+        <input type="text" value="1234567890">
+
+        <label>Teléfono</label>
+        <div class="input-box">
+            <input type="text" value="3003215468">
+            <span>✏️</span>
+        </div>
+
+        <label>Dirección</label>
+        <div class="input-box">
+            <input type="text" value="Maria Occidente">
+            <span>✏️</span>
+        </div>
+
+    </div>
+
 </div>
 
 </body>

@@ -5,13 +5,12 @@
 
 body{
     margin: 0;
-    background: #111;
+    background: #e0dcdc;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-
 
 .container{
     width: 90%;
@@ -20,7 +19,6 @@ body{
     padding: 20px;
     border-radius: 10px;
 }
-
 
 .header{
     display: flex;
@@ -34,7 +32,6 @@ body{
     border-radius: 20px;
     border: none;
     background-color:  #d7d5d5bb;
-    text-decoration: dashed;
 }
 
 .menu-icon{
@@ -45,39 +42,78 @@ body{
     cursor: pointer;
 }
 
-
+/* TABLA */
 .table{
     border: 1px solid #b1afaf;
 }
 
 .table-header{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     padding: 10px;
     background: #b9b7b7;
     font-weight: bold;
+    text-align: center;
 }
 
 .row{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
     padding: 10px;
     border-top: 1px solid #999;
     background-color:#e9e8e8 ;
-
-    
 }
 
-.icono{
-    width: 83px;
-    height: 25px;
-    margin-right:10px;
-   
+/* SOLO nombres alineados a la izquierda */
+.row div:nth-child(2),
+.row div:nth-child(3){
+    text-align: left;
 }
 
+/* CENTRAR ROL */
+.row div:nth-child(4){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/* CENTRAR OPCIONES */
+.row div:nth-child(6){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/* ICONOS */
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* BOTONES SIN CUADRO */
+.icons button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.icons button:hover {
+    background-color: #e0e0e0;
+}
+.icons a{
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 30px;
+}
+
+/* AVATAR */
 .avatar{
     width: 40px;
     height: 40px;
@@ -93,12 +129,13 @@ body{
     color: #222;
 }
 
-
+/* SWITCH */
 .switch{
     width: 45px;
     height: 20px;
     border-radius: 20px;
     position: relative;
+    margin: auto;
 }
 
 .switch::after{
@@ -127,15 +164,7 @@ body{
     left: 1px;
 }
 
-
-.icons{
-    font-size: 18px;
-    display: flex;
-    gap: 10px;
-    cursor: pointer;
-}
-
-
+/* FOOTER */
 .footer{
     display: flex;
     justify-content: space-between;

@@ -80,6 +80,8 @@ body {
 
 .ojo {
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
 /* CHECKBOX OCULTO */

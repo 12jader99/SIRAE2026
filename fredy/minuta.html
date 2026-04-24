@@ -14,7 +14,16 @@
         <!-- HEADER -->
         <div class="header">
             <div>
-                <p class="volver">← Volver al inicio</p>
+                <p class="volver" onclick="volver()">← Volver al inicio</p>
+                <script>
+                function volver(){
+                    if (document.referrer !== "") {
+                        history.back();
+                    } else {
+                        window.location.href = "../isa/inicio.html"; // página por defecto
+                    }
+                }
+                </script>
                 <p class="sub">
                     Menú del día <br>
                     <span>Selecciona el menú para hoy</span>
@@ -23,7 +32,6 @@
             <div class="iconos">🔔 ⋮</div>
         </div>
 
-        <!-- MENÚ SUGERIDO -->
         <div class="sugerido">
             🍴 <b>Menú sugerido para hoy</b><br>
             💡 Tienes suficiente papa, carne y vegetales en inventario
@@ -32,13 +40,13 @@
         <!-- CARD -->
         <div class="menu-card">
 
-            <img src="carne-guisada.jpg" alt="plato">
+            <img src="../imagenes/carne-guisada.jpg" alt="plato">
 
             <div class="contenido">
 
                 <p class="porcion">
                     Porción por grado 
-                    <span class="ojo">👁</span>
+                    <a class="ojo" href="gramaje.html">👁</a>
                 </p>
 
                 <!-- CHECKBOX OCULTO -->
@@ -58,7 +66,7 @@
 
                 <div class="botones">
                     <button class="btn-verde">Usar este menú</button>
-                    <button class="btn-blanco">Ver otros menús</button>
+                    <a class="btn-blanco" href=".html">Ver otros menús</a>
                 </div>
 
             </div>

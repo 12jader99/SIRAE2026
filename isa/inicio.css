@@ -1,13 +1,10 @@
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
-
-    /* fondo con patrón suave */
     background-color:#e7e4dc;
 }
 
 /* TARJETA PRINCIPAL */
-
 .main-card{
     width:85%;
     margin:40px auto;
@@ -17,12 +14,10 @@ body{
 }
 
 /* BIENVENIDA */
-
 .top-bar{
     background:#d9d9d9;
     border-radius:15px;
     padding:15px;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -34,13 +29,21 @@ body{
     cursor:pointer;
 }
 
-/* MENU VERDE */
-
+/* MENÚ */
 .menu-hoy{
     background:#718a6d;
     border-radius:20px;
     margin-top:20px;
     padding:25px;
+    color:white;
+}
+
+.menu-hoy a{
+    color:white;
+    text-decoration:none;
+}
+
+.menu-hoy a:visited{
     color:white;
 }
 
@@ -53,19 +56,29 @@ body{
 }
 
 /* TARJETAS PEQUEÑAS */
-
 .quick-cards{
     display:flex;
     justify-content:space-between;
     margin-top:20px;
 }
 
-.q-card{
+.q-card,
+a.q-card{
     width:22%;
-    background:#d9d9d9;
     border-radius:15px;
     padding:15px;
     text-align:center;
+    color:black;
+    text-decoration:none;
+    background:#d9d9d9;
+    transition:0.3s;
+}
+
+/* efecto hover bonito */
+.q-card:hover{
+    transform:scale(1.05);
+    background:#cfcfcf;
+    cursor:pointer;
 }
 
 .q-card p{
@@ -73,13 +86,11 @@ body{
 }
 
 /* ESTADISTICAS */
-
 .stats{
     margin-top:20px;
     background:#d9d9d9;
     border-radius:20px;
     padding:20px;
-
     display:flex;
     justify-content:space-around;
 }
@@ -93,7 +104,6 @@ body{
 }
 
 /* COLORES NUMEROS */
-
 .green{
     color:#39b54a;
 }

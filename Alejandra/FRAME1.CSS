@@ -2,15 +2,13 @@ body{
     margin:0;
     font-family:Jomhuria, sans-serif;
 }
-
 .fondo{
     height:100vh;
-    background:url("img/fondo.png") center/cover;
+    background: url("../imagenes/fondo.png") no-repeat center center/cover;
     display:flex;
     justify-content:center;
     align-items:center;
 }
-
 .tarjeta{
     width:500px;
     padding:40px;
@@ -18,15 +16,12 @@ body{
     border-radius:30px;
     text-align:center;
 }
-
 .logo{
     width:200px;
 }
-
 h1,p{
     color:white;
 }
-
 .btn{
     display:inline-block;
     padding:10px 30px;

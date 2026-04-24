@@ -33,7 +33,12 @@
             <div>Espinoza</div>
             <div>⌄</div>
             <div class="switch green"></div>
-            <div class="icons"> <img src="foto.png" class="icono">👁</div>           
+            <div class="icons">
+                <a href="../isa/infoAndres.html">👁</a>
+                <a href="../jader12/FrameC.html">✏️</a>
+                <button onclick="eliminarUsuario(event, 'Andres')">🗑️</button>
+            </div>
+                 
         </div>
 
         <!-- FILA 2 -->
@@ -43,7 +48,12 @@
             <div>Pipicano</div>
             <div>⌄</div>
             <div class="switch green"></div>
-            <div class="icons"><img src="foto.png" class="icono">👁</div>
+           <div class="icons">
+                <a href="../jader12/infoYeimy.html">👁</a>
+                <a href="../jader12/FrameC.html">✏️</a>
+                <button onclick="eliminarUsuario(event, 'Yeimy')">🗑️</button>
+
+            </div> 
         </div>
 
         <!-- FILA 3 -->
@@ -53,7 +63,11 @@
             <div>Ortega</div>
             <div>⌄</div>
             <div class="switch red"></div>
-            <div class="icons"><img src="foto.png" class="icono">👁</div>
+            <div class="icons">
+                <a href="../isa/infoJader.html">👁</a>
+                <a href="../jader12/FrameC.html">✏️</a>
+                <button onclick="eliminarUsuario(event, 'Jader')">🗑️</button>
+            </div>
         </div>
 
         <!-- FILA 4 -->
@@ -63,7 +77,11 @@
             <div>Rivera</div>
             <div>⌄</div>
             <div class="switch red"></div>
-            <div class="icons"><img src="foto.png" class="icono">👁</div>
+            <div class="icons">
+                <a href="../jader12/infofredy.html">👁</a>
+                <a href="../jader12/FrameC.html">✏️</a>
+                <button onclick="eliminarUsuario(event, 'Jhon.f')">🗑️</button>
+            </div>
         </div>
 
         <!-- FILA 5 -->
@@ -73,11 +91,14 @@
             <div>Campo</div>
             <div>⌄</div>
             <div class="switch green"></div>
-            <div class="icons"><img src="foto.png" class="icono">👁</div>
+            <div class="icons">
+                <a href="../isa/infoIsa.html">👁</a>
+                <a href="../jader12/FrameC.html">✏️</a>
+                <button onclick="eliminarUsuario(event, 'Isabela')">🗑️</button>
+            </div>
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <a href="../isa/home.html" class="back">←</a>
         <button class="add">＋ Agregar usuarios</button>
@@ -85,5 +106,19 @@
 
 </div>
 
+<script>
+function eliminarUsuario(e, nombre) {
+    let confirmacion = confirm("¿Seguro que quieres eliminar a " + nombre + "?");
+
+    if (confirmacion) {
+        alert("Usuario eliminado correctamente");
+
+        // Elimina la fila visualmente
+        e.target.closest('.row').remove();
+    } else {
+        alert("Operación cancelada");
+    }
+}
+</script>
 </body>
 </html>

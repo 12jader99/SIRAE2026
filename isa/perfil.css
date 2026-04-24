@@ -1,18 +1,112 @@
-body{font-family:Arial;background:#e6e1d6}
-.back{
-    margin:20px;
-    display:inline-block;
-    font-size:22px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
 }
-.perfil{
-    width:350px;
-    margin:auto;
-    background:#f2eadf;
-    padding:25px;
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#111;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    width:300px;
+    background:linear-gradient(135deg,#d9d0c3,#bfb3a3);
+    padding:15px;
+    border-radius:10px;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.header h2{
+    font-size:16px;
+    color:#555;
+}
+
+.volver{
+    background: none;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* SWITCH */
+.toggle{
+    width:35px;
+    height:18px;
+    background:#ddd;
     border-radius:20px;
+    position:relative;
 }
-.perfil input{
+
+.toggle::before{
+    content:"";
+    width:14px;
+    height:14px;
+    background:#666;
+    border-radius:50%;
+    position:absolute;
+    top:2px;
+    left:2px;
+}
+
+/* AVATAR */
+.avatar{
+    text-align:center;
+    font-size:60px;
+    color:#666;
+    position:relative;
+    margin-bottom:20px;
+}
+
+.avatar .edit{
+    font-size:16px;
+    position:absolute;
+    right:110px;
+    bottom:5px;
+}
+
+/* FORM */
+.form label{
+    display:block;
+    font-size:13px;
+    margin-top:10px;
+    margin-bottom:5px;
+    color:#666;
+}
+
+/* INPUTS */
+.form input{
     width:100%;
-    margin:8px 0;
-    padding:8px;
+    padding:10px;
+    border:none;
+    background:#ddd;
+    border-radius:3px;
+}
+
+/* INPUT CON ICONO */
+.input-box{
+    position:relative;
+}
+
+.input-box span{
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:14px;
+    color:#555;
 }

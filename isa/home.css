@@ -29,14 +29,13 @@ main{
     flex:1;
     padding:20px;
 
-    background-image: url("../../Alejandra/fondo1.png");
+    background-image: url("../imagenes/fondo1.png");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* HEADER */
 header{
     text-align:right;
 }
